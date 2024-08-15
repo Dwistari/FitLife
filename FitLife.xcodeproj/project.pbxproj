@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		DD27BF982C6CE941009F61C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27BF972C6CE941009F61C8 /* AppDelegate.swift */; };
 		DD27BF9A2C6CE941009F61C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27BF992C6CE941009F61C8 /* SceneDelegate.swift */; };
-		DD27BF9C2C6CE941009F61C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27BF9B2C6CE941009F61C8 /* ViewController.swift */; };
+		DD27BF9C2C6CE941009F61C8 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27BF9B2C6CE941009F61C8 /* SplashViewController.swift */; };
 		DD27BF9F2C6CE941009F61C8 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = DD27BF9E2C6CE941009F61C8 /* Base */; };
 		DD27BFA12C6CE942009F61C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD27BFA02C6CE942009F61C8 /* Assets.xcassets */; };
 		DD27BFA42C6CE942009F61C8 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = DD27BFA32C6CE942009F61C8 /* Base */; };
 		DD27BFAF2C6CE942009F61C8 /* FitLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27BFAE2C6CE942009F61C8 /* FitLifeTests.swift */; };
 		DD27BFB92C6CE942009F61C8 /* FitLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27BFB82C6CE942009F61C8 /* FitLifeUITests.swift */; };
 		DD27BFBB2C6CE942009F61C8 /* FitLifeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27BFBA2C6CE942009F61C8 /* FitLifeUITestsLaunchTests.swift */; };
+		DD5FF4302C6E12DC00690B74 /* OnBoardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5FF42F2C6E12DC00690B74 /* OnBoardingController.swift */; };
+		DD5FF4332C6E14B800690B74 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5FF4322C6E14B800690B74 /* UIColor+Extensions.swift */; };
+		DD5FF4352C6E1B0B00690B74 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5FF4342C6E1B0B00690B74 /* UIView+Extensions.swift */; };
+		DD5FF4392C6E344900690B74 /* WelcomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5FF4382C6E344900690B74 /* WelcomePageController.swift */; };
+		DD5FF43B2C6E3A6C00690B74 /* OnBoardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5FF43A2C6E3A6C00690B74 /* OnBoardingPageViewController.swift */; };
+		DD5FF43E2C6E3C5900690B74 /* RegisterPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5FF43D2C6E3C5900690B74 /* RegisterPageController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +45,7 @@
 		DD27BF942C6CE941009F61C8 /* FitLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD27BF972C6CE941009F61C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD27BF992C6CE941009F61C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DD27BF9B2C6CE941009F61C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD27BF9B2C6CE941009F61C8 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		DD27BF9E2C6CE941009F61C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD27BFA02C6CE942009F61C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD27BFA32C6CE942009F61C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +55,12 @@
 		DD27BFB42C6CE942009F61C8 /* FitLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD27BFB82C6CE942009F61C8 /* FitLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitLifeUITests.swift; sourceTree = "<group>"; };
 		DD27BFBA2C6CE942009F61C8 /* FitLifeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitLifeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DD5FF42F2C6E12DC00690B74 /* OnBoardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingController.swift; sourceTree = "<group>"; };
+		DD5FF4322C6E14B800690B74 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		DD5FF4342C6E1B0B00690B74 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		DD5FF4382C6E344900690B74 /* WelcomePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageController.swift; sourceTree = "<group>"; };
+		DD5FF43A2C6E3A6C00690B74 /* OnBoardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPageViewController.swift; sourceTree = "<group>"; };
+		DD5FF43D2C6E3C5900690B74 /* RegisterPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPageController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +111,12 @@
 		DD27BF962C6CE941009F61C8 /* FitLife */ = {
 			isa = PBXGroup;
 			children = (
+				DD5FF4312C6E147A00690B74 /* Utilities */,
+				DD5FF42C2C6E103900690B74 /* ViewModels */,
+				DD5FF42B2C6E103200690B74 /* Views */,
+				DD5FF42A2C6E102E00690B74 /* Controllers */,
 				DD27BF972C6CE941009F61C8 /* AppDelegate.swift */,
 				DD27BF992C6CE941009F61C8 /* SceneDelegate.swift */,
-				DD27BF9B2C6CE941009F61C8 /* ViewController.swift */,
 				DD27BF9D2C6CE941009F61C8 /* Main.storyboard */,
 				DD27BFA02C6CE942009F61C8 /* Assets.xcassets */,
 				DD27BFA22C6CE942009F61C8 /* LaunchScreen.storyboard */,
@@ -125,6 +140,65 @@
 				DD27BFBA2C6CE942009F61C8 /* FitLifeUITestsLaunchTests.swift */,
 			);
 			path = FitLifeUITests;
+			sourceTree = "<group>";
+		};
+		DD5FF42A2C6E102E00690B74 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD5FF43C2C6E3C4200690B74 /* Register */,
+				DD5FF42E2C6E124900690B74 /* Splash */,
+				DD5FF42D2C6E124200690B74 /* OnBoarding */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DD5FF42B2C6E103200690B74 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DD5FF42C2C6E103900690B74 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DD5FF42D2C6E124200690B74 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				DD5FF42F2C6E12DC00690B74 /* OnBoardingController.swift */,
+				DD5FF4382C6E344900690B74 /* WelcomePageController.swift */,
+				DD5FF43A2C6E3A6C00690B74 /* OnBoardingPageViewController.swift */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		DD5FF42E2C6E124900690B74 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				DD27BF9B2C6CE941009F61C8 /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		DD5FF4312C6E147A00690B74 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DD5FF4322C6E14B800690B74 /* UIColor+Extensions.swift */,
+				DD5FF4342C6E1B0B00690B74 /* UIView+Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DD5FF43C2C6E3C4200690B74 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				DD5FF43D2C6E3C5900690B74 /* RegisterPageController.swift */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +332,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD27BF9C2C6CE941009F61C8 /* ViewController.swift in Sources */,
+				DD5FF4352C6E1B0B00690B74 /* UIView+Extensions.swift in Sources */,
+				DD5FF4302C6E12DC00690B74 /* OnBoardingController.swift in Sources */,
+				DD5FF4332C6E14B800690B74 /* UIColor+Extensions.swift in Sources */,
+				DD5FF4392C6E344900690B74 /* WelcomePageController.swift in Sources */,
+				DD5FF43B2C6E3A6C00690B74 /* OnBoardingPageViewController.swift in Sources */,
+				DD27BF9C2C6CE941009F61C8 /* SplashViewController.swift in Sources */,
 				DD27BF982C6CE941009F61C8 /* AppDelegate.swift in Sources */,
+				DD5FF43E2C6E3C5900690B74 /* RegisterPageController.swift in Sources */,
 				DD27BF9A2C6CE941009F61C8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
