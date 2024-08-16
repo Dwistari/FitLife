@@ -66,7 +66,7 @@ class WelcomePageController: UIViewController {
     }
     
     @objc private func gotoOnboarding() {
-        let vc = OnBoardingPageViewController()
+        let vc = OnboardingPageViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

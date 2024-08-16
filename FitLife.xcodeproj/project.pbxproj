@@ -20,7 +20,7 @@
 		DD5FF4332C6E14B800690B74 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5FF4322C6E14B800690B74 /* UIColor+Extensions.swift */; };
 		DD5FF4352C6E1B0B00690B74 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5FF4342C6E1B0B00690B74 /* UIView+Extensions.swift */; };
 		DD5FF4392C6E344900690B74 /* WelcomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5FF4382C6E344900690B74 /* WelcomePageController.swift */; };
-		DD5FF43B2C6E3A6C00690B74 /* OnBoardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5FF43A2C6E3A6C00690B74 /* OnBoardingPageViewController.swift */; };
+		DD5FF43B2C6E3A6C00690B74 /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5FF43A2C6E3A6C00690B74 /* OnboardingPageViewController.swift */; };
 		DD5FF43E2C6E3C5900690B74 /* RegisterPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5FF43D2C6E3C5900690B74 /* RegisterPageController.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,7 +59,7 @@
 		DD5FF4322C6E14B800690B74 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		DD5FF4342C6E1B0B00690B74 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		DD5FF4382C6E344900690B74 /* WelcomePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageController.swift; sourceTree = "<group>"; };
-		DD5FF43A2C6E3A6C00690B74 /* OnBoardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPageViewController.swift; sourceTree = "<group>"; };
+		DD5FF43A2C6E3A6C00690B74 /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
 		DD5FF43D2C6E3C5900690B74 /* RegisterPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPageController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,7 +171,7 @@
 			children = (
 				DD5FF42F2C6E12DC00690B74 /* OnBoardingController.swift */,
 				DD5FF4382C6E344900690B74 /* WelcomePageController.swift */,
-				DD5FF43A2C6E3A6C00690B74 /* OnBoardingPageViewController.swift */,
+				DD5FF43A2C6E3A6C00690B74 /* OnboardingPageViewController.swift */,
 			);
 			path = OnBoarding;
 			sourceTree = "<group>";
@@ -336,7 +336,7 @@
 				DD5FF4302C6E12DC00690B74 /* OnBoardingController.swift in Sources */,
 				DD5FF4332C6E14B800690B74 /* UIColor+Extensions.swift in Sources */,
 				DD5FF4392C6E344900690B74 /* WelcomePageController.swift in Sources */,
-				DD5FF43B2C6E3A6C00690B74 /* OnBoardingPageViewController.swift in Sources */,
+				DD5FF43B2C6E3A6C00690B74 /* OnboardingPageViewController.swift in Sources */,
 				DD27BF9C2C6CE941009F61C8 /* SplashViewController.swift in Sources */,
 				DD27BF982C6CE941009F61C8 /* AppDelegate.swift in Sources */,
 				DD5FF43E2C6E3C5900690B74 /* RegisterPageController.swift in Sources */,

@@ -43,6 +43,8 @@ class OnBoardingController: UIViewController {
     var arrayImage: [String] = []
     var pageIndex: Int = 0
 
+    var nextButtonTapped: (() -> Void)?
+
     private let onboardingContent = [
         ("onBoard_1", "Track Your Goal", "Don't worry if you have trouble determining your goals, We can help you determine your goals and track your goals"),
         ("onBoard_2", "Get Burn", "Let’s keep burning, to achive yours goals, it hurts only temporarily, if you give up now you will be in pain forever."),
@@ -101,7 +103,6 @@ class OnBoardingController: UIViewController {
     
     
     @objc private func gotoRegister() {
-        let vc = RegisterPageController()
-        self.navigationController?.pushViewController(vc, animated: true)
+        nextButtonTapped?()
     }
 }
