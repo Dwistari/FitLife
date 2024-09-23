@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class WelcomePageController: UIViewController {
     
@@ -28,7 +29,7 @@ class WelcomePageController: UIViewController {
         view.setTitleColor(UIColor(hex: "#9DCEFF"), for: .normal)
         view.backgroundColor = UIColor.white
         view.layer.cornerRadius = 30
-        view.addTarget(self, action: #selector(gotoOnboarding), for: .touchUpInside)
+        view.addTarget(self, action: #selector(openListWorkout), for: .touchUpInside)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -68,5 +69,23 @@ class WelcomePageController: UIViewController {
     @objc private func gotoOnboarding() {
         let vc = OnboardingPageViewController()
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc private func openListWorkout() {
+        let swiftUIView = WorkoutHistoryView()
+        
+        // Create a UIHostingController with the SwiftUI view
+        let hostingController = UIHostingController(rootView: swiftUIView)
+        
+        // Add the hosting controller as a child view controller
+        addChild(hostingController)
+        view.addSubview(hostingController.view)
+        
+        // Set the frame of the hosting controller's view to fill the parent view
+        hostingController.view.frame = view.bounds
+        hostingController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        
+        // Notify the hosting controller that it has been moved to a parent view controller
+        hostingController.didMove(toParent: self)
     }
 }
