@@ -2,7 +2,7 @@
 //  TrackerLog+CoreDataProperties.swift
 //  FitLife
 //
-//  Created by Dwistari on 10/05/25.
+//  Created by Dwistari on 13/05/25.
 //
 //
 
@@ -16,8 +16,11 @@ extension TrackerLog {
         return NSFetchRequest<TrackerLog>(entityName: "TrackerLog")
     }
 
-    @NSManaged public var id: String?
+    @NSManaged public var date: Date?
     @NSManaged public var name: String?
+    @NSManaged public var reps: Int16
+    @NSManaged public var sets: Int16
+    @NSManaged public var weight: Double
 
 }
 

@@ -2,7 +2,7 @@
 //  TrackerLog+CoreDataClass.swift
 //  FitLife
 //
-//  Created by Dwistari on 10/05/25.
+//  Created by Dwistari on 13/05/25.
 //
 //
 

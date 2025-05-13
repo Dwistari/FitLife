@@ -55,31 +55,27 @@ class CoreDataManager {
         }
     }
     
-    func saveMyWorkout(name: String, sets: String, reps: String, weight: String, completion: @escaping (Bool) -> Void) {
+    func saveMyWorkout(category: WorkoutCategory?, sets: String, reps: String, weight: String, completion: @escaping (Bool) -> Void) {
         let newWorkout = WorkoutSession(context: context)
         newWorkout.id = UUID()
         newWorkout.date = Date()
-        newWorkout.name = name
+        newWorkout.name = category?.name
         newWorkout.sets = Int16(sets) ?? 0
         newWorkout.reps = Int16(reps) ?? 0
         newWorkout.weight = Double(weight) ?? 0
         do {
             try context.save()
+            trackLog(category: category, sets: sets, reps: reps, weight: weight)
             completion(true)
         } catch {
             completion(false)
         }
     }
     
-    
     func preloadWorkoutCategories() -> [WorkoutCategory] {
-        print("preloadWorkoutCategories")
-        
         let fetchRequest = WorkoutCategory.fetchRequest()
-        print("fetchRequest", fetchRequest)
         do {
             let count = try context.count(for: fetchRequest)
-            print("wo-count", count)
             if count == 0 {
                 let categoryNames = ["Chest", "Back", "Legs", "Cardio", "Arms", "Shoulders"]
                 var categories: [WorkoutCategory] = []
@@ -88,8 +84,6 @@ class CoreDataManager {
                     category.id = UUID()
                     category.name = name
                     categories.append(category)
-                    
-                    print("categories", name)
                 }
                 
                 try context.save()
@@ -121,21 +115,52 @@ class CoreDataManager {
            }
     }
     
-//    func saveWorkoutLog(name: WorkoutCategory, sets: String, reps: String, weight: String, completion: @escaping (Bool) -> Void) {
-//        let newWorkout = WorkoutLog(context: context)
-//        newWorkout.id = UUID()
-//        newWorkout.date = Date()
-//        newWorkout.name = name
-//        newWorkout.sets = Int16(sets) ?? 0
-//        newWorkout.reps = Int16(reps) ?? 0
-//        newWorkout.weight = Double(weight) ?? 0
-//        do {
-//            try context.save()
-//            completion(true)
-//        } catch {
-//            completion(false)
-//        }
-//    }
+    
+    func trackLog(category: WorkoutCategory?, sets: String, reps: String, weight: String) {
+        guard let categoryName = category?.name else { return }
+        
+        let fetchRequest: NSFetchRequest<TrackerLog> = TrackerLog.fetchRequest()
+        fetchRequest.predicate = NSPredicate(format: "name == %@", categoryName)
+        
+        do {
+            let existingLogs = try context.fetch(fetchRequest)
+
+            let log: TrackerLog
+            if let existing = existingLogs.first {
+                // 🔁 Update existing
+                log = existing
+                print("🔁 Updating existing log")
+            } else {
+                // ➕ Create new
+                log = TrackerLog(context: context)
+                log.date = Date()
+                log.name = categoryName
+                print("➕ Creating new log")
+            }
+
+            log.sets = Int16(sets) ?? 0
+            log.reps = Int16(reps) ?? 0
+            log.weight = Double(weight) ?? 0
+
+            try context.save()
+            print("✅ Successfully saved tracker log")
+        } catch {
+            print("❌ Failed to save tracker: \(error)")
+        }
+    }
+    
+    func fetchAllTrackerLogs() -> [TrackerLog] {
+        let fetchRequest: NSFetchRequest<TrackerLog> = TrackerLog.fetchRequest()
+        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "date", ascending: false)]
+
+        do {
+            let logs = try context.fetch(fetchRequest)
+            return logs
+        } catch {
+            print("❌ Failed to fetch tracker logs: \(error)")
+            return []
+        }
+    }
     
     
     func delete(playlistID: NSManagedObjectID) {

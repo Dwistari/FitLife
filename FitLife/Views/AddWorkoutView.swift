@@ -16,7 +16,7 @@ struct AddWorkoutView: View {
     @State private var weight: String = ""
     @State private var workout: WorkoutSession?
     @State private var isDropdownVisible = false
-    @State private var selectedWorkout = ""
+    @State private var selectedWorkout: WorkoutCategory?
     
     let workouts = CoreDataManager.shared.preloadWorkoutCategories()
     
@@ -42,7 +42,8 @@ struct AddWorkoutView: View {
                 VStack {
                     Text("Workout name")
                         .frame(alignment: .leading)
-                    TextField("Enter workout name", text: $name)
+                    TextField("Choose workout", text: $name)
+                        .disabled(true)
                         .frame(height: 50)
                         .padding(.horizontal)
                         .background(Color(.systemGray6))
@@ -59,15 +60,13 @@ struct AddWorkoutView: View {
                                 Text(workout.name ?? "")
                                     .onTapGesture {
                                         name = workout.name ?? ""
+                                        selectedWorkout = workout
                                         withAnimation {
                                             isDropdownVisible = false
                                         }
                                     }
                             }
                             .onAppear {
-                                print("workouts--", workouts.count)
-                                
-                                print("masuukkk")
 //                                CoreDataManager.shared.resetWorkoutCategories()
                             }
                             .frame(maxHeight: 200)
@@ -100,7 +99,7 @@ struct AddWorkoutView: View {
                         workout?.reps = Int16(reps) ?? 0
                         workout?.weight = Double(weight) ?? 0
                     } else {
-                        CoreDataManager.shared.saveMyWorkout(name: name, sets: sets, reps: reps, weight: weight ) { result in
+                        CoreDataManager.shared.saveMyWorkout(category: selectedWorkout, sets: sets, reps: reps, weight: weight ) { result in
                             if result {
                                 print("✅ Workout saved!")
                                 presentationMode.wrappedValue.dismiss()

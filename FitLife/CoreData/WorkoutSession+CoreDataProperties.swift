@@ -22,6 +22,7 @@ extension WorkoutSession {
     @NSManaged public var reps: Int16
     @NSManaged public var sets: Int16
     @NSManaged public var weight: Double
+    @NSManaged public var category: WorkoutCategory?
 
 }
 

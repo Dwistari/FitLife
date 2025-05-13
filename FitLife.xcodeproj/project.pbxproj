@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DD17E44C2DCF1AC100F2C58D /* WorkoutSession+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD17E44A2DCF1AC100F2C58D /* WorkoutSession+CoreDataClass.swift */; };
-		DD17E44D2DCF1AC100F2C58D /* WorkoutSession+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD17E44B2DCF1AC100F2C58D /* WorkoutSession+CoreDataProperties.swift */; };
-		DD17E4542DCF1B2300F2C58D /* TrackerLog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD17E4522DCF1B2300F2C58D /* TrackerLog+CoreDataClass.swift */; };
-		DD17E4552DCF1B2300F2C58D /* TrackerLog+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD17E4532DCF1B2300F2C58D /* TrackerLog+CoreDataProperties.swift */; };
-		DD17E45C2DCF7F6C00F2C58D /* WorkoutCategory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD17E45A2DCF7F6C00F2C58D /* WorkoutCategory+CoreDataClass.swift */; };
-		DD17E45D2DCF7F6C00F2C58D /* WorkoutCategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD17E45B2DCF7F6C00F2C58D /* WorkoutCategory+CoreDataProperties.swift */; };
+		DD17E46E2DCF90C800F2C58D /* WorkoutCategory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD17E46A2DCF90C800F2C58D /* WorkoutCategory+CoreDataClass.swift */; };
+		DD17E46F2DCF90C800F2C58D /* WorkoutCategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD17E46B2DCF90C800F2C58D /* WorkoutCategory+CoreDataProperties.swift */; };
+		DD17E4702DCF90C800F2C58D /* WorkoutSession+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD17E46C2DCF90C800F2C58D /* WorkoutSession+CoreDataClass.swift */; };
+		DD17E4712DCF90C800F2C58D /* WorkoutSession+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD17E46D2DCF90C800F2C58D /* WorkoutSession+CoreDataProperties.swift */; };
 		DD56DD692DA3BED7003C601E /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD56DD682DA3BED7003C601E /* ScheduleView.swift */; };
+		DD6C35F32DD3A1EF0013C6EB /* TrackerLog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6C35F12DD3A1EF0013C6EB /* TrackerLog+CoreDataClass.swift */; };
+		DD6C35F42DD3A1EF0013C6EB /* TrackerLog+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6C35F22DD3A1EF0013C6EB /* TrackerLog+CoreDataProperties.swift */; };
+		DD6C35F72DD3A3B20013C6EB /* TrackerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6C35F62DD3A3B20013C6EB /* TrackerViewModel.swift */; };
 		DD76DA762D8FF62A0096AFE2 /* FitLifeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD76DA752D8FF62A0096AFE2 /* FitLifeApp.swift */; };
 		DD76DA782D8FF62A0096AFE2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD76DA772D8FF62A0096AFE2 /* HomeView.swift */; };
 		DD76DA7A2D8FF62C0096AFE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD76DA792D8FF62C0096AFE2 /* Assets.xcassets */; };
@@ -27,7 +28,7 @@
 		DD76DAC62D90244B0096AFE2 /* GreyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD76DAC52D90244B0096AFE2 /* GreyTextField.swift */; };
 		DD8B89DA2DBE99FA00B84B6C /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8B89D92DBE99FA00B84B6C /* BaseView.swift */; };
 		DDFBD5B32DCC6A2F0008A15B /* WorkoutListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFBD5B22DCC6A2F0008A15B /* WorkoutListView.swift */; };
-		DDFBD5BE2DCCA5AF0008A15B /* TrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFBD5BD2DCCA5AF0008A15B /* TrackerView.swift */; };
+		DDFBD5BE2DCCA5AF0008A15B /* TrackerLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFBD5BD2DCCA5AF0008A15B /* TrackerLogView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,13 +49,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DD17E44A2DCF1AC100F2C58D /* WorkoutSession+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkoutSession+CoreDataClass.swift"; sourceTree = "<group>"; };
-		DD17E44B2DCF1AC100F2C58D /* WorkoutSession+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkoutSession+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		DD17E4522DCF1B2300F2C58D /* TrackerLog+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrackerLog+CoreDataClass.swift"; sourceTree = "<group>"; };
-		DD17E4532DCF1B2300F2C58D /* TrackerLog+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrackerLog+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		DD17E45A2DCF7F6C00F2C58D /* WorkoutCategory+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkoutCategory+CoreDataClass.swift"; sourceTree = "<group>"; };
-		DD17E45B2DCF7F6C00F2C58D /* WorkoutCategory+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkoutCategory+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DD17E46A2DCF90C800F2C58D /* WorkoutCategory+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkoutCategory+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DD17E46B2DCF90C800F2C58D /* WorkoutCategory+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkoutCategory+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DD17E46C2DCF90C800F2C58D /* WorkoutSession+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkoutSession+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DD17E46D2DCF90C800F2C58D /* WorkoutSession+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkoutSession+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DD56DD682DA3BED7003C601E /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		DD6C35F12DD3A1EF0013C6EB /* TrackerLog+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrackerLog+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DD6C35F22DD3A1EF0013C6EB /* TrackerLog+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrackerLog+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DD6C35F62DD3A3B20013C6EB /* TrackerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerViewModel.swift; sourceTree = "<group>"; };
 		DD76DA722D8FF62A0096AFE2 /* FitLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD76DA752D8FF62A0096AFE2 /* FitLifeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitLifeApp.swift; sourceTree = "<group>"; };
 		DD76DA772D8FF62A0096AFE2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -71,7 +73,7 @@
 		DD76DAC52D90244B0096AFE2 /* GreyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreyTextField.swift; sourceTree = "<group>"; };
 		DD8B89D92DBE99FA00B84B6C /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		DDFBD5B22DCC6A2F0008A15B /* WorkoutListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListView.swift; sourceTree = "<group>"; };
-		DDFBD5BD2DCCA5AF0008A15B /* TrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerView.swift; sourceTree = "<group>"; };
+		DDFBD5BD2DCCA5AF0008A15B /* TrackerLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerLogView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,15 +101,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD6C35F52DD3A3A10013C6EB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DD6C35F62DD3A3B20013C6EB /* TrackerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		DD76DA692D8FF62A0096AFE2 = {
 			isa = PBXGroup;
 			children = (
-				DD17E45A2DCF7F6C00F2C58D /* WorkoutCategory+CoreDataClass.swift */,
-				DD17E45B2DCF7F6C00F2C58D /* WorkoutCategory+CoreDataProperties.swift */,
-				DD17E4522DCF1B2300F2C58D /* TrackerLog+CoreDataClass.swift */,
-				DD17E4532DCF1B2300F2C58D /* TrackerLog+CoreDataProperties.swift */,
-				DD17E44A2DCF1AC100F2C58D /* WorkoutSession+CoreDataClass.swift */,
-				DD17E44B2DCF1AC100F2C58D /* WorkoutSession+CoreDataProperties.swift */,
 				DD76DA742D8FF62A0096AFE2 /* FitLife */,
 				DD76DA852D8FF62C0096AFE2 /* FitLifeTests */,
 				DD76DA8F2D8FF62C0096AFE2 /* FitLifeUITests */,
@@ -128,6 +132,7 @@
 		DD76DA742D8FF62A0096AFE2 /* FitLife */ = {
 			isa = PBXGroup;
 			children = (
+				DD6C35F52DD3A3A10013C6EB /* ViewModel */,
 				DDFBD5B42DCC9E750008A15B /* Models */,
 				DD76DAC42D9024370096AFE2 /* Components */,
 				DD76DA9F2D8FF71F0096AFE2 /* CoreData */,
@@ -169,6 +174,12 @@
 			children = (
 				DD76DAA02D8FF7760096AFE2 /* FitLifeModel.xcdatamodeld */,
 				DD76DABA2D9001BA0096AFE2 /* CoreDataManager.swift */,
+				DD17E46A2DCF90C800F2C58D /* WorkoutCategory+CoreDataClass.swift */,
+				DD17E46B2DCF90C800F2C58D /* WorkoutCategory+CoreDataProperties.swift */,
+				DD17E46C2DCF90C800F2C58D /* WorkoutSession+CoreDataClass.swift */,
+				DD6C35F12DD3A1EF0013C6EB /* TrackerLog+CoreDataClass.swift */,
+				DD6C35F22DD3A1EF0013C6EB /* TrackerLog+CoreDataProperties.swift */,
+				DD17E46D2DCF90C800F2C58D /* WorkoutSession+CoreDataProperties.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -181,7 +192,7 @@
 				DD56DD682DA3BED7003C601E /* ScheduleView.swift */,
 				DD8B89D92DBE99FA00B84B6C /* BaseView.swift */,
 				DDFBD5B22DCC6A2F0008A15B /* WorkoutListView.swift */,
-				DDFBD5BD2DCCA5AF0008A15B /* TrackerView.swift */,
+				DDFBD5BD2DCCA5AF0008A15B /* TrackerLogView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -333,20 +344,21 @@
 			files = (
 				DD76DA782D8FF62A0096AFE2 /* HomeView.swift in Sources */,
 				DD76DA762D8FF62A0096AFE2 /* FitLifeApp.swift in Sources */,
-				DD17E4542DCF1B2300F2C58D /* TrackerLog+CoreDataClass.swift in Sources */,
-				DD17E4552DCF1B2300F2C58D /* TrackerLog+CoreDataProperties.swift in Sources */,
 				DD76DABF2D901E1F0096AFE2 /* AddWorkoutView.swift in Sources */,
-				DDFBD5BE2DCCA5AF0008A15B /* TrackerView.swift in Sources */,
+				DDFBD5BE2DCCA5AF0008A15B /* TrackerLogView.swift in Sources */,
 				DD76DAC62D90244B0096AFE2 /* GreyTextField.swift in Sources */,
-				DD17E45C2DCF7F6C00F2C58D /* WorkoutCategory+CoreDataClass.swift in Sources */,
-				DD17E45D2DCF7F6C00F2C58D /* WorkoutCategory+CoreDataProperties.swift in Sources */,
 				DD76DAA22D8FF7770096AFE2 /* FitLifeModel.xcdatamodeld in Sources */,
 				DDFBD5B32DCC6A2F0008A15B /* WorkoutListView.swift in Sources */,
 				DD56DD692DA3BED7003C601E /* ScheduleView.swift in Sources */,
 				DD76DABB2D9001BA0096AFE2 /* CoreDataManager.swift in Sources */,
-				DD17E44C2DCF1AC100F2C58D /* WorkoutSession+CoreDataClass.swift in Sources */,
-				DD17E44D2DCF1AC100F2C58D /* WorkoutSession+CoreDataProperties.swift in Sources */,
+				DD6C35F72DD3A3B20013C6EB /* TrackerViewModel.swift in Sources */,
 				DD8B89DA2DBE99FA00B84B6C /* BaseView.swift in Sources */,
+				DD17E46E2DCF90C800F2C58D /* WorkoutCategory+CoreDataClass.swift in Sources */,
+				DD6C35F32DD3A1EF0013C6EB /* TrackerLog+CoreDataClass.swift in Sources */,
+				DD6C35F42DD3A1EF0013C6EB /* TrackerLog+CoreDataProperties.swift in Sources */,
+				DD17E46F2DCF90C800F2C58D /* WorkoutCategory+CoreDataProperties.swift in Sources */,
+				DD17E4702DCF90C800F2C58D /* WorkoutSession+CoreDataClass.swift in Sources */,
+				DD17E4712DCF90C800F2C58D /* WorkoutSession+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
