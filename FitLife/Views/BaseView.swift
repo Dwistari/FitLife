@@ -15,7 +15,7 @@ struct BaseView: View {
                     .tabItem {
                         Label("Home", systemImage: "person")
                     }
-                HomeView()
+                ScheduleView()
                     .tabItem {
                         Label("Schedule", systemImage: "person")
                     }

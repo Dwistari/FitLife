@@ -9,26 +9,34 @@ import SwiftUI
 
 struct TrackerLogView: View {
     @StateObject var viewModel = TrackerViewModel()
-
+    
     var body: some View {
         NavigationView {
-            List(viewModel.trackerLogs, id: \.self) { log in
-                VStack(alignment: .leading) {
-                    Text(log.name ?? "Unknown Category")
-                        .font(.headline)
-                    HStack {
-                        Text("Sets: \(log.sets)")
-                        Text("Reps: \(log.reps)")
-                        Text("Weight: \(log.weight, specifier: "%.1f") kg")
-                    }
-                    .font(.subheadline)
-                    if let date = log.date {
-                        Text("Date: \(date.formatted(date: .abbreviated, time: .shortened))")
-                            .font(.caption)
-                            .foregroundColor(.gray)
+            VStack {
+                if viewModel.trackerLogs.isEmpty{
+                    Text("No data available.")
+                        .font(.title2)
+                        .foregroundColor(.gray)
+                } else {
+                    List(viewModel.trackerLogs, id: \.self) { log in
+                        VStack(alignment: .leading) {
+                            Text(log.name ?? "Unknown Category")
+                                .font(.headline)
+                            HStack {
+                                Text("Sets: \(log.sets)")
+                                Text("Reps: \(log.reps)")
+                                Text("Weight: \(log.weight, specifier: "%.1f") kg")
+                            }
+                            .font(.subheadline)
+                            if let date = log.date {
+                                Text("Date: \(date.formatted(date: .abbreviated, time: .shortened))")
+                                    .font(.caption)
+                                    .foregroundColor(.gray)
+                            }
+                        }
+                        .padding(.vertical, 4)
                     }
                 }
-                .padding(.vertical, 4)
             }
             .navigationTitle("Tracker Logs")
         }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD0248CF2DD4323900899C02 /* CategorySeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0248CE2DD4323900899C02 /* CategorySeed.swift */; };
+		DD0248D12DD4327700899C02 /* WorkoutCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0248D02DD4327700899C02 /* WorkoutCategoryViewModel.swift */; };
+		DD0248D42DD43B9400899C02 /* WorkoutCategories.json in Resources */ = {isa = PBXBuildFile; fileRef = DD0248D32DD43B9400899C02 /* WorkoutCategories.json */; };
+		DD0248D72DD43BDD00899C02 /* FitLifeModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD0248D52DD43BDD00899C02 /* FitLifeModel.xcdatamodeld */; };
 		DD17E46E2DCF90C800F2C58D /* WorkoutCategory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD17E46A2DCF90C800F2C58D /* WorkoutCategory+CoreDataClass.swift */; };
 		DD17E46F2DCF90C800F2C58D /* WorkoutCategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD17E46B2DCF90C800F2C58D /* WorkoutCategory+CoreDataProperties.swift */; };
 		DD17E4702DCF90C800F2C58D /* WorkoutSession+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD17E46C2DCF90C800F2C58D /* WorkoutSession+CoreDataClass.swift */; };
@@ -22,7 +26,6 @@
 		DD76DA872D8FF62C0096AFE2 /* FitLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD76DA862D8FF62C0096AFE2 /* FitLifeTests.swift */; };
 		DD76DA912D8FF62C0096AFE2 /* FitLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD76DA902D8FF62C0096AFE2 /* FitLifeUITests.swift */; };
 		DD76DA932D8FF62C0096AFE2 /* FitLifeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD76DA922D8FF62C0096AFE2 /* FitLifeUITestsLaunchTests.swift */; };
-		DD76DAA22D8FF7770096AFE2 /* FitLifeModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD76DAA02D8FF7760096AFE2 /* FitLifeModel.xcdatamodeld */; };
 		DD76DABB2D9001BA0096AFE2 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD76DABA2D9001BA0096AFE2 /* CoreDataManager.swift */; };
 		DD76DABF2D901E1F0096AFE2 /* AddWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD76DABE2D901E1F0096AFE2 /* AddWorkoutView.swift */; };
 		DD76DAC62D90244B0096AFE2 /* GreyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD76DAC52D90244B0096AFE2 /* GreyTextField.swift */; };
@@ -49,6 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD0248CE2DD4323900899C02 /* CategorySeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySeed.swift; sourceTree = "<group>"; };
+		DD0248D02DD4327700899C02 /* WorkoutCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCategoryViewModel.swift; sourceTree = "<group>"; };
+		DD0248D32DD43B9400899C02 /* WorkoutCategories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = WorkoutCategories.json; sourceTree = "<group>"; };
+		DD0248D62DD43BDD00899C02 /* FitLifeModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FitLifeModel.xcdatamodel; sourceTree = "<group>"; };
 		DD17E46A2DCF90C800F2C58D /* WorkoutCategory+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkoutCategory+CoreDataClass.swift"; sourceTree = "<group>"; };
 		DD17E46B2DCF90C800F2C58D /* WorkoutCategory+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkoutCategory+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DD17E46C2DCF90C800F2C58D /* WorkoutSession+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkoutSession+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -67,7 +74,6 @@
 		DD76DA8C2D8FF62C0096AFE2 /* FitLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD76DA902D8FF62C0096AFE2 /* FitLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitLifeUITests.swift; sourceTree = "<group>"; };
 		DD76DA922D8FF62C0096AFE2 /* FitLifeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitLifeUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		DD76DAA12D8FF7760096AFE2 /* FitLifeModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FitLifeModel.xcdatamodel; sourceTree = "<group>"; };
 		DD76DABA2D9001BA0096AFE2 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		DD76DABE2D901E1F0096AFE2 /* AddWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutView.swift; sourceTree = "<group>"; };
 		DD76DAC52D90244B0096AFE2 /* GreyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreyTextField.swift; sourceTree = "<group>"; };
@@ -101,10 +107,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD0248D22DD43B1500899C02 /* Persistent */ = {
+			isa = PBXGroup;
+			children = (
+				DD76DA9F2D8FF71F0096AFE2 /* CoreData */,
+				DD0248D32DD43B9400899C02 /* WorkoutCategories.json */,
+			);
+			path = Persistent;
+			sourceTree = "<group>";
+		};
 		DD6C35F52DD3A3A10013C6EB /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				DD6C35F62DD3A3B20013C6EB /* TrackerViewModel.swift */,
+				DD0248D02DD4327700899C02 /* WorkoutCategoryViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -132,10 +148,10 @@
 		DD76DA742D8FF62A0096AFE2 /* FitLife */ = {
 			isa = PBXGroup;
 			children = (
+				DD0248D22DD43B1500899C02 /* Persistent */,
 				DD6C35F52DD3A3A10013C6EB /* ViewModel */,
 				DDFBD5B42DCC9E750008A15B /* Models */,
 				DD76DAC42D9024370096AFE2 /* Components */,
-				DD76DA9F2D8FF71F0096AFE2 /* CoreData */,
 				DD76DAB32D8FFD670096AFE2 /* Views */,
 				DD76DA752D8FF62A0096AFE2 /* FitLifeApp.swift */,
 				DD76DA792D8FF62C0096AFE2 /* Assets.xcassets */,
@@ -172,7 +188,7 @@
 		DD76DA9F2D8FF71F0096AFE2 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				DD76DAA02D8FF7760096AFE2 /* FitLifeModel.xcdatamodeld */,
+				DD0248D52DD43BDD00899C02 /* FitLifeModel.xcdatamodeld */,
 				DD76DABA2D9001BA0096AFE2 /* CoreDataManager.swift */,
 				DD17E46A2DCF90C800F2C58D /* WorkoutCategory+CoreDataClass.swift */,
 				DD17E46B2DCF90C800F2C58D /* WorkoutCategory+CoreDataProperties.swift */,
@@ -208,6 +224,7 @@
 		DDFBD5B42DCC9E750008A15B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DD0248CE2DD4323900899C02 /* CategorySeed.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -317,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD76DA7D2D8FF62C0096AFE2 /* Preview Assets.xcassets in Resources */,
+				DD0248D42DD43B9400899C02 /* WorkoutCategories.json in Resources */,
 				DD76DA7A2D8FF62C0096AFE2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,18 +365,20 @@
 				DD76DABF2D901E1F0096AFE2 /* AddWorkoutView.swift in Sources */,
 				DDFBD5BE2DCCA5AF0008A15B /* TrackerLogView.swift in Sources */,
 				DD76DAC62D90244B0096AFE2 /* GreyTextField.swift in Sources */,
-				DD76DAA22D8FF7770096AFE2 /* FitLifeModel.xcdatamodeld in Sources */,
 				DDFBD5B32DCC6A2F0008A15B /* WorkoutListView.swift in Sources */,
 				DD56DD692DA3BED7003C601E /* ScheduleView.swift in Sources */,
 				DD76DABB2D9001BA0096AFE2 /* CoreDataManager.swift in Sources */,
+				DD0248D72DD43BDD00899C02 /* FitLifeModel.xcdatamodeld in Sources */,
 				DD6C35F72DD3A3B20013C6EB /* TrackerViewModel.swift in Sources */,
 				DD8B89DA2DBE99FA00B84B6C /* BaseView.swift in Sources */,
 				DD17E46E2DCF90C800F2C58D /* WorkoutCategory+CoreDataClass.swift in Sources */,
+				DD0248CF2DD4323900899C02 /* CategorySeed.swift in Sources */,
 				DD6C35F32DD3A1EF0013C6EB /* TrackerLog+CoreDataClass.swift in Sources */,
 				DD6C35F42DD3A1EF0013C6EB /* TrackerLog+CoreDataProperties.swift in Sources */,
 				DD17E46F2DCF90C800F2C58D /* WorkoutCategory+CoreDataProperties.swift in Sources */,
 				DD17E4702DCF90C800F2C58D /* WorkoutSession+CoreDataClass.swift in Sources */,
 				DD17E4712DCF90C800F2C58D /* WorkoutSession+CoreDataProperties.swift in Sources */,
+				DD0248D12DD4327700899C02 /* WorkoutCategoryViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -692,14 +712,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		DD76DAA02D8FF7760096AFE2 /* FitLifeModel.xcdatamodeld */ = {
+		DD0248D52DD43BDD00899C02 /* FitLifeModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				DD76DAA12D8FF7760096AFE2 /* FitLifeModel.xcdatamodel */,
+				DD0248D62DD43BDD00899C02 /* FitLifeModel.xcdatamodel */,
 			);
-			currentVersion = DD76DAA12D8FF7760096AFE2 /* FitLifeModel.xcdatamodel */;
+			currentVersion = DD0248D62DD43BDD00899C02 /* FitLifeModel.xcdatamodel */;
 			name = FitLifeModel.xcdatamodeld;
-			path = /Users/dwistari/Documents/Development/Project/FitLife/FitLife/CoreData/FitLifeModel.xcdatamodeld;
+			path = /Users/dwistari/Documents/Development/Project/FitLife/FitLife/Persistent/CoreData/FitLifeModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

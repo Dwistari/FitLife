@@ -73,33 +73,42 @@ class CoreDataManager {
     }
     
     func preloadWorkoutCategories() -> [WorkoutCategory] {
-        let fetchRequest = WorkoutCategory.fetchRequest()
+        
+        let fetchRequest: NSFetchRequest<WorkoutCategory> = WorkoutCategory.fetchRequest()
+
         do {
             let count = try context.count(for: fetchRequest)
             if count == 0 {
-                let categoryNames = ["Chest", "Back", "Legs", "Cardio", "Arms", "Shoulders"]
-                var categories: [WorkoutCategory] = []
-                for name in categoryNames {
-                    let category = WorkoutCategory(context: context)
-                    category.id = UUID()
-                    category.name = name
-                    categories.append(category)
+                guard let url = Bundle.main.url(forResource: "WorkoutCategories", withExtension: "json") else {
+                    print("❌ JSON file not found in bundle.")
+                    return []
                 }
-                
-                try context.save()
-                print("✅ Preloaded workout categories.")
-                return categories
-            } else {
-                print("ℹ️ Workout categories already exist.")
-               
-                // Return existing data
-                let existing = try context.fetch(fetchRequest)
-                return existing
+
+                do {
+                    let data = try Data(contentsOf: url)
+                    let seedCategories = try JSONDecoder().decode([CategorySeed].self, from: data)
+                    
+                    for item in seedCategories {
+                        let category = WorkoutCategory(context: context)
+                        category.id = UUID()
+                        category.name = item.name
+                    }
+
+                    try context.save()
+                    print("✅ Preloaded workout categories from JSON.")
+                    
+                } catch {
+                    print("❌ Failed to decode or save: \(error)")
+                    return []
+                }
             }
+
+            return try context.fetch(fetchRequest)
+
         } catch {
-            print("❌ Failed to preload: \(error)")
+            print("❌ Error loading categories: \(error)")
+            return []
         }
-        return []
     }
     
     func resetWorkoutCategories() {
